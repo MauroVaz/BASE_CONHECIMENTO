@@ -1,9 +1,11 @@
-##DOCKER COMMANDS
+# Docker - Comandos
 
-#Trocar hora container
+## Trocar horário/timezone do container
 
-`docker exec -u 0 -it oracle-12c bash` #Entra como root
+```sh
+docker exec -u 0 -it oracle-12c bash` #Entra como root
 
-`rm -f /etc/localtime` #Remove localtime atual
+rm -f /etc/localtime` #Remove localtime atual
 
-`ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime`  #Recria Link simbolico para timezone
+ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime`  #Recria Link simbolico para timezone
+```
